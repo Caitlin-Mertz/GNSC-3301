@@ -1,0 +1,50 @@
+import turtle
+>>> ugh = turtle.Turtle()
+>>> def makeShape(numSides):
+...     for x in range(numSides):
+...             ugh.forward(100)
+...             ugh.left(360/numSides)
+... 
+>>> makeShape(3)
+>>> ugh.color('red')
+>>> ugh.penup()
+>>> ugh.setpos(-100, 250)
+>>> ugh.pendown()
+>>> def makeShape(numSides):
+...     for x in range(numSides):
+...             ugh.forward(10)
+...             ugh.left(360.0/numSides)
+... 
+>>> makeShape(5)
+>>> ugh.color('blue')
+>>> ugh.penup()
+>>> ugh.setpos(150, -300)
+>>> ugh.pendown()
+>>> def makeShape(numSides):
+...     for x in range(numSides):
+...             ugh.right(360.0/numSides)
+...             ugh.forward(50)
+... 
+>>> makeShape(8)
+>>> ugh.color('green')
+>>> ugh.penup()
+>>> ugh.setpos(-100, -100)
+>>> ugh.pendown()
+>>> def makeShape(numSides):
+...     for x in range(numSides):
+...             ugh.left(360.0/numSides)
+...             ugh.forward(150)
+... 
+>>> makeShape(4)
+>>> ugh.penup()
+>>> ugh.setpos(50,-50)
+>>> ugh.pendown()
+>>> ugh.circle(25)
+
+This is a paragraph describing what I intended the turtle to do in this program. 
+I intended for the turtle to start with creating a triangle in black in the center of the page, 
+then move to a pentagon in red in the upper left corner without a line connecting the two, 
+then move to an octagon in blue by the lower right-hand corner, then move to the bottom left-hand corner create a green square. 
+For kicks and giggles, I also added a green circle near the center of the page under the triangle 
+to make sure I had the correct amount of shapes needed as the octagon was hard to see on the page because 
+of how far away I placed it. All of this is to be done within a python turtle program.
