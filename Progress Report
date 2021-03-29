@@ -1,0 +1,11 @@
+Coding is coming along together nicely, but has yet to be 100% completed and tested.
+The timing circuit...
+
+goals of the project:
+is that the coding works with some steady prescion to measure the period (or frequency) of a timing circuit. 
+the output of the circut is flowing in a continuous cycle without any random breaks in the circuit.
+
+resources contracted: 
+we are using this website (https://www.electronicdesign.com/resources/ideas-for-design/article/21144327/microcontroller-efficiently-measures-frequency-and-period) to help us establish what our timing apparatus and mathematics need.
+
+some initial results: as the coding and apparatus has yet to be used together, the initial results are none. 
