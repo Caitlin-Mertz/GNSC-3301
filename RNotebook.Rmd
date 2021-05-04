@@ -4,3 +4,24 @@ output: html_notebook
 This project was created by Caitlin Mertz and Lauren Brese.
 Caitlin Mertz contributed to the team by finding reasources to implement the coding and by creating the github repository that the group was able to work through.
 The project began with a Raspberry Pi computer, 5 led bulbs of assorted colors, 5 short connecting cords, 6 long connecting cords, a circuit board, and 5 [metal thingys]. The Raspberry Pi was connected to a monitor and booted up. Then the circuit board was connected to the Raspberry Pi by attaching the [long black] cord to stabalize the electrical charge. The 5 led bulbs were then placed 5 spaces apart from each other at spaces 60, 55, 50, 45, and 40. After being placed, the short wires and [metal thingys] were used to connect the electrical currents to the light bulbs. After setiing up the circuit board the coding began. ---
+Lauren Brese contributed to the team by finding the coding needed to try and run the LED board experiment and by bringing the Raspberry Pi computer needed to complete the experiment.  The package gpiozero was first downloaded onto the Raspberry Pi to make sure that the code could run and once the package was added to the Raspberry Pi, the code could be imported.  The coding began with 
+
+from gpiozero import LEDBoard
+from time import sleep
+from signal import pause
+
+leds = LEDBoard(40, 45, 50, 55, 60)
+
+leds.on()
+sleep(1)
+leds.off()
+sleep(1)
+leds.value = (1, 0, 1, 0, 1)
+sleep(1)
+leds.blink()
+
+pause()
+
+After the code was added to the terminal, the code was run, only to find that there was an error in the coding.  The coding was changed five times, thinking that it was the numbers for the lights that were the issue, and after each change, the code was run to see what the error was.  However, after the fifth run, the terminal froze and no edits could be made.  Multiple attempts were made to try and click on different programs on the Raspberry Pi, but it seemed that the system had crashed and nothing was working.  The Raspberry Pi was given a hard reboot twice, but both times the system would only get up to about halfway before an error message was shown that said "Can not sync".  After the failed hard reboots, a picture was taken of the device set up and then disassembled.
+
+Overall, the setup and lead up to the experiment was a success, but unfortunately, the coding and actual results of the experiment could not be obtained.
